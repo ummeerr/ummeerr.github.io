@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="page2.css">
+    <title>About page</title>
+</head>
+<body>    
+    <div class="can">
+        <video autoplay muted loop>
+            <source src="images/abstract_-_12902 (720p).mp4" type="video/mp4">
+        </video>
+        <div class="text-box">
+            <h1>ABOUT ME</h1>
+        </div>
+    </div>
+    <div id="about">
+        <div id="container">
+           <div class="row">
+               <div class="about-col-1">
+                   <img src="images/umer.png">
+               </div>
+               <div class="about-col-2">
+                   <h1  class="sub-title">About Me</h1>
+                   <p>Observant and gifted sketch artist, skilled in using a variety of tools and mediums to create sketches.
+                    Outstanding problem-solving abilities that enable me to recognize, evaluate, and come up with solutions
+                    for visual problems. I am committed to comprehending and conveying the core of what people say as an
+                     engaged listener.</p>
+   
+                   <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                       <p class="tab-links" onclick="opentab('education')">Education</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Sketch Artist</span><br>Can use different mediums & tools to create images. [with refrence]</li>
+                        <li><span>Problem Solving</span><br>Identifying & Analyzing a problem.</li>
+                        <li><span>Active Listener</span><br>Focused completely on what another person trying to say/express.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Design Web/App Interface</li>
+                        <li><span>Web Development</span><br>Design Web/App In</li>
+                        <li><span>App Development</span><br>Design Web/App In</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-current</span><br>Doing Bachelor</li>
+                        <li><span>2021-2022</span><br>Auto-cad 2D & 3D, Export & Import courses.</li>
+                        <li><span>2017-2021</span><br>Completed O & A-level in Classic School System, Pakistan.</li>
+                        <li><span>2006-2017</span><br>completed kg-1 till 9th in  Arab Unity School, Dubai.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+   </div>
+   
+      <script>
+        
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+   
+        function opentab(tabname){
+           for (tablink of tablinks){
+               tablink.classList.remove("active-link");
+           }
+           for (tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+           }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab");
+        }
+   
+      </script>
+</body>
+</html>

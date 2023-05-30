@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/ad8a783082.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">\Portfolio/</h1>
+            <ul>
+                <li><a href="Home.html" target="_blank">Home</a></li>
+                <li><a href="About.html" target="_blank">About</a></li>
+                <li><a href="Service.html" target="_blank">Service</a></li>
+                <li><a href="work.html" target="_blank">Portfolio</a></li>
+                <li><a href="Contact.html" target="_blank">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+     <div class="header-text">
+         <p>Multitasking</p>
+        <h1>Hi, I'm <span>Muhammad Umer</span><br>From Pakistan.</h1>
+     </div>
+   </div>
+
+   <!--About section-->
+
+   <div id="about">
+     <div id="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/umer.png">
+            </div>
+            <div class="about-col-2">
+                <h1  class="sub-title">About Me</h1>
+                <p>Observant and gifted sketch artist, skilled in using a variety of tools and mediums to create sketches.
+                    Outstanding problem-solving abilities that enable me to recognize, evaluate, and come up with solutions
+                    for visual problems. I am committed to comprehending and conveying the core of what people say as an
+                     engaged listener.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Sketch Artist</span><br>Can use different mediums & tools to create images. [with refrence]</li>
+                        <li><span>Problem Solving</span><br>Identifying & Analyzing a problem.</li>
+                        <li><span>Active Listener</span><br>Focused completely on what another person trying to say/express.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Customer service</span><br>Worked in bussines as cutomer service.</li>
+                        <li><span>Web Development</span><br>Design/Development of web in process.</li>
+                        <li><span>App Development</span><br>learning in process for app development.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-current</span><br>Bachelor in process.</li>
+                        <li><span>2021-2022</span><br>Auto-cad 2D & 3D, Export & Import courses.</li>
+                        <li><span>2017-2021</span><br>Completed O & A-level in Classic School System, Pakistan.</li>
+                        <li><span>2006-2017</span><br>completed kg-1 till 9th in  Arab Unity School, Dubai.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </div>
+   </div>
+
+   <!--service section-->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+               <i class="fa-solid fa-laptop-code"></i>
+               <h2>Web Design</h2>
+               <p>webpage making, designing, templates to choose or on demand.</p>
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-pencil"></i>
+                <h2>Sketching</h2>
+                <p>moderate level art with refrence.</p>
+                
+             </div>
+             <div>
+                <i class="fa-solid fa-code-fork"></i>
+                <h2>App Design</h2>
+                <p>app making, designing, templates to choose or on demand.</p>
+                
+             </div>     
+        </div>
+        <a href="Service.html" class="more"><i class="fa-solid fa-plus"></i></a>
+    </div>
+</div>
+           
+             
+
+<!--portfolio section-->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/arrows-1.jpg">
+            <div class="layer">
+                <h3>Sketching</h3>
+                <p>Some of my random art work.</p>
+                <a href="work.html"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/floor-plan.jpg">
+            <div class="layer">
+                <h3>Auto-Cad</h3>
+                <p>random 2d & 3d work</p>
+                <a href="work.html"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work-1.png">
+            <div class="layer">
+                <h3>Apps</h3>
+                <p>some of my prototype</p>
+                <a href="work.html"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+            </div>
+        </div>
+    </div>
+    <a  href="work.html" class="btn">See More</a>
+  </div>  
+</div>
+
+<!--contact section-->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> umerasifyounas@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 0526867838</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/umer.asif.1428/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/umer1010/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <a href="images/umer cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--about section js-->
+   <script>
+     
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+     }
+
+   </script>
+</body>
+</html>
